@@ -1,0 +1,10 @@
+{
+  "name": "dmat-prep-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "npm --prefix dmat-app run build",
+    "start": "npm --prefix dmat-app start",
+    "install:app": "npm --prefix dmat-app install"
+  }
+}

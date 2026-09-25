@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: dmat-prep-app
+    env: node
+    plan: free
+    region: oregon
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: OMNIROUTE_API_KEY
+        sync: false
+      - key: OMNIROUTE_BASE_URL
+        sync: false
+      - key: OMNIROUTE_MODEL
+        value: auto/chat
