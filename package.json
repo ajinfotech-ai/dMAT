@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "postinstall": "npm --prefix dmat-app install",
+    "postinstall": "npm --prefix dmat-app install --include=dev",
     "build": "npm --prefix dmat-app run build",
     "start": "npm --prefix dmat-app start"
   }
