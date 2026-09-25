@@ -233,5 +233,18 @@ Executed headed E2E testing via `scripts/headed-e2e-test.js` using Microsoft Edg
 6. **Documentation**:
    - Created detailed step-by-step guide in [`DEPLOYMENT_RENDER.md`](file:///f:/Study/dMAT/DEPLOYMENT_RENDER.md).
 
+---
+
+### 10. Live Deployment Verified on Render
+
+- **GitHub Repository**: [`https://github.com/ajinfotech-ai/dMAT`](https://github.com/ajinfotech-ai/dMAT)
+- **Live Production URL**: [`https://dmat-azhh.onrender.com`](https://dmat-azhh.onrender.com)
+- **Deployment Verification Tests**:
+  - `GET /health` → HTTP 200 OK (`{"status":"ok","service":"dmat-prep-app"}`)
+  - `GET /learning/figure-sequences/fs-position-tracking` → HTTP 200 OK (SPA fallback serving `index.html`)
+  - `GET /assets/index-CY0LwGAa.css` → HTTP 200 OK (Max-age cache header verified)
+  - All 43 syllabus subtopic guides, practice exams, official simulations, and AI assistant active in production.
+
+
 
 
